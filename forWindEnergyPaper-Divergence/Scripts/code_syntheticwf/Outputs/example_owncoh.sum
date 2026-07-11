@@ -1,0 +1,16 @@
+T  Clockwise
+0 -  NONE  IEC turbulence models scaled to exact specified standard deviation
+
+Turbine/Model Specifications:
+         21  Vertical grid-point matrix dimension
+         21  Horizontal grid-point matrix dimension
+         0.50  Time step [seconds]
+         512  Analysis time [seconds]
+         512  Usable output time [seconds]
+
+140.000000  Hub height [m]
+
+UBar  =  10.3385 m/s
+TI(u) =  7.0000 %
+TI(v) =  2.0000 %
+TI(w) =  2.0000 %
