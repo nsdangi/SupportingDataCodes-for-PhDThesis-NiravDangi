@@ -1,0 +1,29 @@
+#Short README
+# See the attached journal article
+# Dangi, N., Sodja, J., & Yu, W. (2025). Divergence‐Free Correction for Synthetic Wind Fields. Wind Energy, 28(11), e70062.
+
+
+# Scripts for performing Helmholtz-Hodge decomposition in three ways: 
+1. FFT (Fourier transform based) -> ready to run script placed
+2. FFT based but constrained to user specified bounds -> ready to run script placed
+3. Matrix discretisation -> partially ready to run script placed with all calculation functions. It is advised to run it with 32-64GB+ RAM, from personal experience
+#  "runscript_*.m" for performing the correction that takes in data from "Data" folder
+  #creates "*_divfree*" folders to save divergence free wind fields
+
+# Short comparison
+1. FFT based-> Uses significantly less RAM; but, assumes periodicity and if not, uses mirror techniques
+2. Matrix based -> More accurate given the less strict assumptions on underlying data; but, significantly more expensive due to the matrix inversion
+3. FFT constrained-> same as 1 but allows to limit changes to several statistics of the wind fields
+
+# Inputs
+1. TurbSim style ".wnd" files-> can easily be changed to take in ".bts" files too
+
+# Outputs
+1. Divergence‐Free wind Fields
+
+#  example post-processing scripts placed as "postP*.m" files 
+  #creates "Images" folder
+# Sample inputs of wind field of two different coherence models are placed for one of the operating conditions
+# These are "R NABL Diff Decay" and "R NABL Kaimal Decay" as detailed in the attached article
+
+# Currently "Images" and "*_divfree*" folders are already populated. You may rerun the scripts and overwrite or copy current ouptuts as example outputs
